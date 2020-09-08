@@ -8,6 +8,5 @@ public class Greeting {
            int year = 2020;
         String idea1 = id + year;
         System.out.println(idea1);
-
     }
 }
