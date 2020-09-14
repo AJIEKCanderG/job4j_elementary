@@ -2,7 +2,7 @@ package ru.job4j.condition;
 
 public class LogicNot {
 
-    public boolean isEven(boolean num) {
+    public boolean isEven(int num) {
         return num % 2 == 0;
     }
 
@@ -11,19 +11,23 @@ public class LogicNot {
     }
 
     public boolean notEven(int num) {
-        return !isEven(num % 2 == 0);
-    }
+        boolean notEven = num % 2 == 0;
+            return !notEven(num);
+        }
 
     public boolean notPositive(int num) {
-       return !notPositive(num > 0);
+           boolean notPositive = num > 0;
+        return !notPositive(num);
     }
 
     public boolean notEvenAndPositive(int num) {
-        return !notEvenAndPositive(num % 2 == 0 && 0);
+        boolean notEvenAndPositive = num % 2 == 0 && num > 0;
+        return !notEvenAndPositive(num);
     }
 
     public boolean evenOrNotPositive(int num) {
-        return !evenOrNotPositive(num % 2 == 0 || 0);
+        boolean evenOrNotPositive = num % 2 == 0 || num > 0;
+        return !evenOrNotPositive(num);
     }
 
 }
