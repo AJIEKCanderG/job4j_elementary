@@ -19,4 +19,12 @@ public class CounterTest {
         int expected = 20;
         assertThat(rsl, is(expected));
     }
+
+    @Test
+    public void whenSumNotEvenNumbersFromZeroToEightThenTwenty() {
+        int rsl = Counter.sumByNotEven(0, 8);
+        int expected = 16;
+        assertThat(rsl, is(expected));
+    }
+
 }
