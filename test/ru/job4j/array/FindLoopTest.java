@@ -18,9 +18,9 @@ public class FindLoopTest {
     @Test
     public void whenArrayHas3Then1() {
         int[] input = {4, 3, 2, 1};
-        int value = 3;
+        int value = 12;
         int result = FindLoop.indexOf(input, value);
-        int expect = 1;
+        int expect = -1;
         assertThat(result, is(expect));
     }
 
