@@ -2,9 +2,12 @@ package ru.job4j.array;
 
 public class EndsWith {
     public static boolean endsWith(char[] word, char[] post) {
-        for (int index = 0; index < post.length; index++) {
-            return word[word.length - 1] == post[post.length - 1];
+        boolean result = true;
+        for (int index = post.length - 1; index > 0; index--) {
+            if (post[index] != word[word.length - 1]) {
+                return false;
+            }
         }
-        return true;
+        return result;
     }
 }
