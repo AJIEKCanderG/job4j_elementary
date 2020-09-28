@@ -4,17 +4,16 @@ public class Defragment {
     public static String[] compress(String[] array) {
         for (int index = 0; index < array.length; index++) {
             if (array[index] == null) {
-                int point = index;
-                while (point < array.length && array[point] == null) {
-                    point++;
+                for (int i = index + 1; i < array.length; i++) {
+                    if (array[i] != null) {
+                        String temp = array[i];
+                        array[i] = array[index];
+                        array[index] = temp;
+                        break;
+                    }
                 }
-                if (point < array.length) {
-                    array[index] = array[point];
-                    array[point] = null;
-                }
-                System.out.print(array[index] + " ");
             }
-
+            System.out.print(array[index] + " ");
         }
         return array;
     }
@@ -23,8 +22,8 @@ public class Defragment {
             String[] input = {"I", null, "wanna", null, "be", null, "compressed"};
             String[] compressed = compress(input);
             System.out.println();
-            for (int index = 0; index < compressed.length; index++) {
-                System.out.print(compressed[index] + " ");
+            for (String s : compressed) {
+                System.out.print(s + " ");
             }
         }
     }
