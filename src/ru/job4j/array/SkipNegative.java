@@ -12,4 +12,4 @@ public class SkipNegative {
         }
         return array;
     }
-    }
+}
