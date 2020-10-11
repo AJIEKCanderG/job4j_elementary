@@ -5,8 +5,8 @@ public class Slash {
         for (int row = 0; row < size; row++) {
             for (int cell = 0; cell < size; cell++) {
                 int sum = row + cell;
-                boolean left = cell == row; /* добавить условие, по которому нужно определить ставить ли символ или нет. */
-                boolean right = sum == size - 1; /* добавить условие, что нужно ставить элемент в правый угол. */
+                boolean left = cell == row;
+                boolean right = sum == size - 1;
                 if (left) {
                     System.out.print("0");
                 } else if (right) {

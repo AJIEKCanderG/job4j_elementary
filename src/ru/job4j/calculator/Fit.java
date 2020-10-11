@@ -1,7 +1,5 @@
 package ru.job4j.calculator;
-/** Идеальный вес для мужчин = (рост в сантиметрах – 100) · 1,15.
 
- Идеальный вес для женщин = (рост в сантиметрах – 110) · 1,15.*/
 public class Fit {
 
     public static double manWeight(double height) {
@@ -20,5 +18,4 @@ public class Fit {
         System.out.println("Man 184 is " + man);
         System.out.println("Woman 170 is " + woman);
     }
-
 }
