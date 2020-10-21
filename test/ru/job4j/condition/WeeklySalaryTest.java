@@ -14,6 +14,13 @@ public class WeeklySalaryTest {
     }
 
     @Test
+    public void calculateIs415() {
+        int[] hours = {9, 8, 8, 8, 8, 0, 0};
+        int rsl = WeeklySalary.calculate(hours);
+        assertThat(rsl, is(415));
+    }
+
+    @Test
     public void calculateIs410() {
         int[] hours = {10, 10, 10, 0, 8, 0, 0};
         int rsl = WeeklySalary.calculate(hours);

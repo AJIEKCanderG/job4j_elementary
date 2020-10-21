@@ -10,7 +10,7 @@ public class WeeklySalary {
                 sum += rsl;
             }
             if (i < 5 && hours[i] > 8) {
-                rsl = 80 + (hours[i] - 8) * 15;
+                rsl = (hours[i] - (hours[i] - 8))*10 + (hours[i] - 8) * 15;
                 sum += rsl;
             }
             if (i >= 5 && hours[i] <= 8) {
@@ -18,7 +18,7 @@ public class WeeklySalary {
                 sum += rsl;
             }
             if (i >= 5 && hours[i] > 8) {
-                rsl = 160 + (hours[i] - 8) * 30;
+                rsl = (hours[i] - (hours[i] - 8))*20 + (hours[i] - 8) * 30;
                 sum += rsl;
             }
         }
