@@ -42,18 +42,4 @@ public class MergeRowsTest {
         int[] out = MergeRows.merge(input);
         assertArrayEquals(expected, out);
     }
-
-    @Test
-    public void test4() {
-        int[][] input = {
-                {10, 9, 8, 7},
-                {6, 5, 4},
-                {3, 2},
-                {1}
-        };
-        int[] expected = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
-        int[] out = MergeRows.merge(input);
-        assertArrayEquals(expected, out);
-    }
-
 }
