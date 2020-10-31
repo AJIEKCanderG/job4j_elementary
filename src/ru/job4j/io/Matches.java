@@ -8,6 +8,7 @@ public class Matches {
         System.out.println("Добро пожаловать в игру \"11\"");
         boolean game11 = true;
         int count = 11;
+        int rate = 1;
         while (game11) {
             System.out.print("Введите число от 1 до 3: ");
             System.out.println();
@@ -19,9 +20,9 @@ public class Matches {
                 gamer = Integer.parseInt(input.nextLine());
             }
             count = count - gamer;
+            rate++;
             if (count == 0) {
-                game11 = !game11;
-                String name = game11 ? "gamer_1" : "gamer_2";
+                String name = rate % 2 == 0 ? "gamer_1" : "gamer_2";
                 System.out.println(" Выиграл игрок " + name);
                 game11 = false;
             }
