@@ -25,11 +25,9 @@ public class Matches {
                 String name = rate % 2 == 0 ? "gamer_1" : "gamer_2";
                 System.out.println(" Выиграл игрок " + name);
                 game11 = false;
-            }
-            else if (count > 0) {
+            } else if (count > 0) {
                 System.out.println("Осталось спичек : " + count);
-            }
-            else {
+            } else {
                 System.out.println("Некорректный ввод.");
             }
         }
