@@ -11,11 +11,12 @@ import java.util.*;
 public class Alphabet {
     public static String reformat(String s) {
         String[] s1 = s.split("");
-        List<String> rsl = new ArrayList<>();
-        Collections.addAll(rsl, s1);
+        List<String> rsl = new ArrayList<>(Arrays.asList(s1));
         Collections.sort(rsl);
         StringBuilder newS = new StringBuilder();
-        newS.append(char.rsl);
+        for(String rsl1 : rsl) {
+            newS.append(rsl1);
+        }
         return newS.toString();
     }
 }
