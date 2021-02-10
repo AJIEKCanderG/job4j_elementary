@@ -12,12 +12,19 @@ public class Alphabet {
     public static String reformat(String s) {
         String[] s1 = s.split("");
         List<String> rsl = new ArrayList<>(Arrays.asList(s1));
-        Collections.sort(rsl);
+        rsl.sort(String::compareTo);
         StringBuilder newS = new StringBuilder();
         for(String rsl1 : rsl) {
             newS.append(rsl1);
         }
         return newS.toString();
+    }
+
+    public static class StringCompare implements Comparator<String> {
+        @Override
+        public int compare(String s, String rsl) {
+            return s.compareTo(rsl);
+        }
     }
 }
 
