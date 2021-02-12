@@ -14,7 +14,7 @@ public class Alphabet {
         List<String> rsl = new ArrayList<>(Arrays.asList(s1));
         Collections.sort(rsl);
         StringBuilder newS = new StringBuilder();
-        for(String rsl1 : rsl) {
+        for (String rsl1 : rsl) {
             newS.append(rsl1);
         }
         return newS.toString();
