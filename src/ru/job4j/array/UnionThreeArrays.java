@@ -13,20 +13,16 @@ package ru.job4j.array;
 public class UnionThreeArrays {
     public static int[] union(int[] left, int[] middle, int[] right) {
         int[] result = new int[right.length + 1];
-
         result[0] = left[0];
         result[result.length - 1] = left[left.length - 1];
         int i = 1;
-        int r = 0;
-        int m = 0;
-        while (r < right.length && m < middle.length) {
-            result[i] = right[r];
-            result[i + 1] = middle[m + 1];
-            r += 2;
-            i += 2;
-            m += 2;
-
+        for (int j = 0; j < right.length; j++) {
+            result[i] = right[j];
+            result[i + 1] = middle[j];
+            i++;
+            j++;
         }
+
         return result;
     }
 }
