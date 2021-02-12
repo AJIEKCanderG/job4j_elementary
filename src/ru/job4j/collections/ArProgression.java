@@ -12,8 +12,8 @@ public class ArProgression {
                 break;
             }
         }
-                if(rsl) {
-                    for(int dataum: data) {
+                if (rsl) {
+                    for (int dataum: data) {
                         sum += dataum;
                     }
                 }
