@@ -16,13 +16,28 @@ public class UnionThreeArrays {
         result[0] = left[0];
         result[result.length - 1] = left[left.length - 1];
         int i = 1;
-        for (int j = 0; j < right.length; j++) {
-            result[i] = right[j];
-            result[i + 1] = middle[j];
+        int m = 0;
+        int r = 0;
+        while (m < middle.length && r < right.length) {
+            if (i % 2 != 0) {
+                result[i] = right[r];
+            }
+            if (i % 2 == 0) {
+                result[i] = middle[m];
+            }
+            r++;
             i++;
-            j++;
+            m++;
         }
-
+      while (r < right.length && i % 2 != 0) {
+            result[i] = right[r];
+            r++;
+        }
+      while (m < middle.length - 1 && i % 2 == 0) {
+            result[i] = middle[m];
+            m++;
+      }
         return result;
     }
 }
+
