@@ -7,13 +7,19 @@ import static org.junit.Assert.*;
 
 public class GeomProgressionTest {
     @Test
+    public void generateAndSum1() {
+        int rsl = GeomProgression.generateAndSum(1, 3, 4);
+        assertThat(rsl, is(40));
+    }
+
+    @Test
     public void generateAndSum() {
         int rsl = GeomProgression.generateAndSum(1, 3, 10);
         assertThat(rsl, is(29524));
     }
 
     @Test
-    public void generateAndSumIs0() {
+    public void generateAndSumIs2() {
         int rsl = GeomProgression.generateAndSum(1, -1, 10);
         assertThat(rsl, is(0));
     }

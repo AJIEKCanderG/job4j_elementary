@@ -16,16 +16,16 @@ import java.util.List;
 
 public class GeomProgression {
     public static int generateAndSum(int first, int denominator, int count) {
-        List<Integer> data = new ArrayList<>(count);
-        int sum = first;
+        List<Integer> data = new ArrayList<>(List.of(count));
+        data.set(0, first);
+        int sum = 0;
         for (int j = 1; j < count; j++) {
-            if (data.get(j) != data.get(first) * denominator) {
-                return 0;
+            int next = data.get(j - 1) * denominator;
+                data.add(next);
             }
-        }
         for (Integer data1 : data) {
-                    sum += data1;
-                }
-            return sum;
+            sum += data1;
+        }
+        return sum;
         }
     }
