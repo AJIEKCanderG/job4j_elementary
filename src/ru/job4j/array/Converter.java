@@ -1,5 +1,4 @@
 package ru.job4j.array;
-
 /**
  * Метод принимает двумерный массив у которого число рядов и число элементов в ряду не совпадают,
  * также количество элементов в каждом ряду может быть абсолютно произвольным.
@@ -14,20 +13,41 @@ package ru.job4j.array;
 public class Converter {
     public static int[][] convertInSquareArray(int[][] array) {
         int sum = 0;
-        for (int[] ints : array) {
+        for (int[] ints : array) {  //вычисляю кол-во элементов входящего двухмерного массива, пройдясь по длинам строк/
             sum += ints.length;
         }
-        int n = (int) Math.ceil(Math.sqrt(sum));
-        int[][] result = new int[n][n];
+        int n = (int) Math.ceil(Math.sqrt(sum)); //нахожу длину нашего нового двухмерного квадратного массива/
         int k = 0;
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                if (k <= array[j].length) {
-                    result[i][j] = array[j][i];
-                    k++;
+        int m = 0;
+        int[][] result = new int[n][n];
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                result[m][k] = array[i][j];
+                if (k++ == result.length - 1) {
+                    k = 0;
+                    m++;
                 }
             }
         }
         return result;
     }
 }
+
+/* Решение №2 через одномерный массив */
+/*       int[] rsl = new int[sum]; // задаю новый одномерный массив в который сложим входящий двухмерный сначала/
+         for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                if (k < rsl.length) {
+                    rsl[k++] = array[i][j];
+                }
+            }
+        }
+       for (int i = 0; i < n; i++) {  // из одномерного массива  получаю квадратный двухмерный/
+            for (int j = 0; j < n; j++) {
+                if (m < rsl.length) {
+                    result[i][j] = rsl[m++];
+                }
+            }
+        }
+
+ */
