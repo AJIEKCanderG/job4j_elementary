@@ -6,6 +6,7 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.*;
 
 public class ConverterTest {
+
     @Test
     public void convertInSquareArray1Without0() {
         int[][] array = {{1}, {2, 3}, {4}};
