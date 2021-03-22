@@ -8,8 +8,8 @@ package ru.job4j.array;
 public class ArrayWithoutEvenElements {
     public static int[] changeData(int[] data) {
         int count = 0;
-        for (int i = 0; i < data.length; i++) {
-            if (data[i] % 2 == 0) {
+        for (int j : data) {
+            if (j % 2 == 0) {
                 continue;
             }
             count++;
@@ -17,10 +17,10 @@ public class ArrayWithoutEvenElements {
         }
         int m = 0;
         int[] data1 = new int[count];
-            for (int j = 0; j <  data.length; j++) {
-                if (data[j] % 2 != 0) {
-                    data1[m] = data[j];
-                    m++;
+        for (int datum : data) {
+            if (datum % 2 != 0) {
+                data1[m] = datum;
+                m++;
             }
         }
         return data1;
