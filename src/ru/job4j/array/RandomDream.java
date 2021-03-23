@@ -7,15 +7,15 @@ package ru.job4j.array;
  * {"автомобиль", "квартира", "билет"} и число = 2 => "квартира"
  * {"автомобиль", "квартира", "билет"} и число = 4 => "автомобиль"
  * {"автомобиль", "квартира", "билет"} и число = 99 => "билет"
+ * "car", "ticket", "flat", "house"   num = 2  prizes = "ticket"
  */
 
 public class RandomDream {
     public static String random(String[] prizes, int num) {
-        String result = "";
-        for (int i = 0; i < num; i++) {
-            if (num == i + 1) {
-                result = prizes[num - i - 1];
-                break;
+        String result = null;
+        for (int i = 0; i < num + prizes.length; i++) {
+            if (i + 1 == num) {
+                result = prizes[i % prizes.length];
             }
         }
         return result;
