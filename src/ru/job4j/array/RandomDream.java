@@ -12,12 +12,6 @@ package ru.job4j.array;
 
 public class RandomDream {
     public static String random(String[] prizes, int num) {
-        String result = null;
-        for (int i = 0; i < num + prizes.length; i++) {
-            if (i + 1 == num) {
-                result = prizes[i % prizes.length];
-            }
-        }
-        return result;
+        return prizes[(num - 1) % prizes.length];
     }
 }

@@ -56,4 +56,9 @@ public class RandomDreamTest {
 
     }
 
+    @Test
+    public void testLengthOne() {
+        String[] prizes = {"car"};
+        assertEquals("car", RandomDream.random(prizes, 2000000));
+    }
 }
