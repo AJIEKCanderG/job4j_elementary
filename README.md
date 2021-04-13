@@ -1,3 +1,5 @@
+[![Build Status](https://www.travis-ci.com/AJIEKCanderG/job4j_elementary.svg?branch=master)](https://www.travis-ci.com/AJIEKCanderG/job4j_elementary)
+
 # Стажировка Jobj4
 
 # Репозиторий содержит проекты стажировки в Jobj4:
