@@ -1,7 +1,8 @@
 package ru.job4j.collection;
 
 import org.junit.Test;
-import ru.job4j.collection.PutContainsKey.User;
+import ru.job4j.collections.PutContainsKey;
+import ru.job4j.collections.PutContainsKey.User;
 
 import java.util.List;
 import java.util.Map;

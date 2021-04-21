@@ -2,7 +2,8 @@ package ru.job4j.collection;
 
 
 import org.junit.Test;
-import ru.job4j.collection.PutIfAbsent.User;
+import ru.job4j.collections.PutIfAbsent;
+import ru.job4j.collections.PutIfAbsent.User;
 
 import java.util.HashMap;
 import java.util.Map;
