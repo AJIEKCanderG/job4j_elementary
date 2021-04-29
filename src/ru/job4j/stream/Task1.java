@@ -11,6 +11,8 @@ import java.util.stream.Collectors;
 
 public class Task1 {
     public static List<Integer> retain(List<Integer> list) {
-        return list.stream().filter(u -> u % 4 != 0).collect(Collectors.toList());
+        return list.stream()
+                .filter(u -> u % 4 != 0)
+                .collect(Collectors.toList());
     }
 }

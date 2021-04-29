@@ -25,6 +25,8 @@ public class UserMap {
     }
 
     public static List<User> map(List<Integer> ages) {
-        return ages.stream().map(User::new).collect(Collectors.toList());
+        return ages.stream()
+                .map(User::new)
+                .collect(Collectors.toList());
     }
 }
