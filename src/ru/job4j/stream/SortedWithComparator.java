@@ -13,6 +13,8 @@ import java.util.stream.Collectors;
 
 public class SortedWithComparator {
     public static List<String> sorted(List<String> strings) {
-        return strings.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList());
+        return strings.stream()
+                .sorted(Comparator.reverseOrder())
+                .collect(Collectors.toList());
     }
 }
