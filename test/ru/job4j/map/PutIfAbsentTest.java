@@ -1,15 +1,15 @@
-package ru.job4j.collection;
+package ru.job4j.map;
 
 
 import org.junit.Test;
-import ru.job4j.collections.PutIfAbsent;
-import ru.job4j.collections.PutIfAbsent.User;
+import ru.job4j.map.PutIfAbsent;
+import ru.job4j.map.PutIfAbsent.User;
 
 import java.util.HashMap;
 import java.util.Map;
 
 import static org.hamcrest.core.Is.is;
-import static org.junit.Assert.assertThat;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 public class PutIfAbsentTest {
     @Test
