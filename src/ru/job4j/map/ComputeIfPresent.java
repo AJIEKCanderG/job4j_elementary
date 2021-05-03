@@ -1,6 +1,5 @@
 package ru.job4j.map;
 
-import java.util.HashMap;
 import java.util.Map;
 
 /**
