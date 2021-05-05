@@ -30,7 +30,7 @@ public class Merge {
     public static Map<Integer, String> collectData(Map<Integer, String> names, List<User> users) {
         for (User user : users) {
             names.putIfAbsent(user.getId(), user.getName());
-            names.merge(user.getId(), user.getName(), (id, name) -> user.name + " " + user.surname);
+            names.merge(user.getId(), user.getSurname(), (oldV, newV) -> oldV + " " + newV);
         }
 
         return names;
