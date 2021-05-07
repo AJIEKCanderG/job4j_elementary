@@ -20,7 +20,7 @@ public class GetOrDefault {
     private final Map<Integer, List<String>> store = new HashMap<>();
 
     public void addValue(int index, List<String> list) {
-            if(!store.containsKey(index)) {
+            if (!store.containsKey(index)) {
                 store.put(index, list);
         }
     }
