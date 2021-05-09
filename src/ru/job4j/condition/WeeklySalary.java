@@ -6,14 +6,11 @@ public class WeeklySalary {
         for (int i = 0; i < hours.length; i++) {
             if (i < 5 && hours[i] <= 8) {
                 sum += hours[i] * 10;
-            }
-            if (i < 5 && hours[i] > 8) {
+            } else if (i < 5 && hours[i] > 8) {
                 sum += (hours[i] - (hours[i] - 8)) * 10 + (hours[i] - 8) * 15;
-            }
-            if (i >= 5 && hours[i] <= 8) {
+            } else if (i >= 5 && hours[i] <= 8) {
                 sum += hours[i] * 20;
-            }
-            if (i >= 5 && hours[i] > 8) {
+            } else if (i >= 5 && hours[i] > 8) {
                 sum += (hours[i] - (hours[i] - 8)) * 20 + (hours[i] - 8) * 30;
             }
         }
