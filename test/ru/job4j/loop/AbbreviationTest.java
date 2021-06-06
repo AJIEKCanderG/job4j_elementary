@@ -3,7 +3,7 @@ package ru.job4j.loop;
 import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;
-import static org.junit.Assert.*;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 public class AbbreviationTest {
     @Test
@@ -23,6 +23,13 @@ public class AbbreviationTest {
     @Test
     public void collect2() {
         String s = "United Nations Organization";
+        String rsl = Abbreviation.collect(s);
+        assertThat(rsl, is("UNO"));
+    }
+
+    @Test
+    public void collect3() {
+        String s = "United, Nations, Organization";
         String rsl = Abbreviation.collect(s);
         assertThat(rsl, is("UNO"));
     }
