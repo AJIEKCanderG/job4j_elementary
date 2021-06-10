@@ -14,7 +14,7 @@ public class ArProgressionTwoVersionTest {
                 1, 6, 11, 16, 21,
                 26, 31, 36, 41, 46
         );
-        int rsl = ArProgression.checkData(data);
+        int rsl = ArProgressionTwoVersion.checkData(data);
         assertThat(rsl, is(235));
     }
 
@@ -24,7 +24,7 @@ public class ArProgressionTwoVersionTest {
                 1, 6, 11, 15, 21,
                 26, 31, 36, 41, 46
         );
-        int rsl = ArProgression.checkData(data);
+        int rsl = ArProgressionTwoVersion.checkData(data);
         assertThat(rsl, is(0));
     }
 }
