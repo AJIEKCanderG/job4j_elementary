@@ -9,11 +9,11 @@ import java.util.Objects;
  * Как же быть в такой ситуации? Очень просто - использовать метод putIfAbsent():
  * V putIfAbsent(K key, V value) - метод помещает в отображение новый объект с ключом key и
  * значением value, если в отображении еще нет элемента с подобным ключом.
- *
+ * <p>
  * А как же мы можем проверить содержится ли определенное значение(не путать с ключом) в отображении или нет?
  * Для этого в интерфейсе Map<K, V> определен метод containsValue()
  * boolean containsValue(V value) - метод возвращает true, если отображение содержит значение value.
- *
+ * <p>
  * Задание:
  * Вам необходимо реализовать метод boolean addNewElement(User u), который осуществит добавление
  * нового элемента только при условии, что такого ключа в отображении еще нет.
@@ -30,10 +30,8 @@ public class PutIfAbsent {
     }
 
     public boolean addNewElement(User u) {
-        boolean rsl;
         users.putIfAbsent(u.getId(), u);
-        rsl = users.containsValue(u);
-        return rsl;
+        return users.containsValue(u);
     }
 
     public static class User {
