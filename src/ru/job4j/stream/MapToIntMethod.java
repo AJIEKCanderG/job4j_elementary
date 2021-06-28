@@ -16,7 +16,7 @@ import java.util.List;
 public class MapToIntMethod {
     public static long sum(List<Character> characters) {
         return characters.stream()
-                .mapToInt(v -> (int)v)
+                .mapToInt(v -> (int) v)
                 .sum();
     }
 }

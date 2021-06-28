@@ -17,7 +17,7 @@ import java.util.stream.IntStream;
 
 public class RangeMethod {
     public static IntStream createStreamRange(int start, int end) {
-        return IntStream.rangeClosed(start,end);
+        return IntStream.rangeClosed(start, end);
     }
 }
 

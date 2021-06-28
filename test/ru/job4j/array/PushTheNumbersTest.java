@@ -9,7 +9,7 @@ public class PushTheNumbersTest {
 
     @Test
     public void testWithArray5To5() {
-        int [][] array = {
+        int[][] array = {
                 {62, 12, 86, 96, 2},
                 {78, 98, 10, 45, 86},
                 {82, 59, 47, 88, 79},
@@ -21,15 +21,15 @@ public class PushTheNumbersTest {
                 {62, 12, 10, 96, 2},
                 {78, 98, 47, 45, 86},
                 {59, 47, 0, 47, 88},
-                {99, 10 ,47, 73, 88},
-                {32, 48 ,91, 87, 55}
+                {99, 10, 47, 73, 88},
+                {32, 48, 91, 87, 55}
         };
         assertThat(array, is(expected));
     }
 
     @Test
     public void testWithArray4To4() {
-        int [][] array = {
+        int[][] array = {
                 {29, 29, 48, 92},
                 {90, 58, 7, 57},
                 {87, 36, 21, 19},

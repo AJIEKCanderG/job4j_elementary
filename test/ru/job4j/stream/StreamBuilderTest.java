@@ -20,10 +20,10 @@ public class StreamBuilderTest {
 
     @Test
     public void whenSeven() {
-        Integer[] data = {1,2,3,4,5,6,7};
+        Integer[] data = {1, 2, 3, 4, 5, 6, 7};
         Stream<Object> stream = StreamBuilder.createStream(data);
         List<Integer> list = stream.map(v -> (Integer) v).collect(Collectors.toList());
-        List<Integer> expect = List.of(1,7);
+        List<Integer> expect = List.of(1, 7);
         assertEquals(expect, list);
     }
 
@@ -32,16 +32,16 @@ public class StreamBuilderTest {
         Integer[] data = {1};
         Stream<Object> stream = StreamBuilder.createStream(data);
         List<Integer> list = stream.map(v -> (Integer) v).collect(Collectors.toList());
-        List<Integer> expect = List.of(1,1);
+        List<Integer> expect = List.of(1, 1);
         assertEquals(expect, list);
     }
 
     @Test
     public void whenTwo() {
-        Integer[] data = {1,2};
+        Integer[] data = {1, 2};
         Stream<Object> stream = StreamBuilder.createStream(data);
         List<Integer> list = stream.map(v -> (Integer) v).collect(Collectors.toList());
-        List<Integer> expect = List.of(1,2);
+        List<Integer> expect = List.of(1, 2);
         assertEquals(expect, list);
     }
 }

@@ -52,8 +52,8 @@ public class Weather {
                 return false;
             }
             Info info = (Info) o;
-            return rainfall == info.rainfall &&
-                    Objects.equals(city, info.city);
+            return rainfall == info.rainfall
+                    && Objects.equals(city, info.city);
         }
 
         @Override
