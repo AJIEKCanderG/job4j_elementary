@@ -22,8 +22,7 @@ public class MergeRows {
         int index = 0;
         for (int i = 0; i < data.length; i++) {
             for (int j = 0; j < data[i].length; j++)  {
-                array[index] = data[i][j];
-                index++;
+                array[index++] = data[i][j];
             }
         }
         return array;

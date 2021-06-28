@@ -18,6 +18,16 @@ public class RightDiagonalTest {
     }
 
     @Test
+    public void test2() {
+        int[][] data = {
+                {1, 2},
+                {3, 4},
+        };
+        int[] expected = {2, 3};
+        assertArrayEquals(expected, RightDiagonal.diagonal(data));
+    }
+
+    @Test
     public void test3() {
         int[][] data = {
                 {1, 5, 9},
