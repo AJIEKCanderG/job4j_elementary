@@ -8,10 +8,15 @@ package ru.job4j.array;
 
 public class UpperCase {
     public static char[] toUpperCase(char[] string) {
-        char[] rsl = new char[string.length];
-        for (char i = 0; i < string.length; i++) {
-                rsl[i] = Character.toUpperCase(string[i]);
+        char[] str = new char[string.length];
+        for(int i =0; i < string.length; i++) {
+            if(Character.isLetter(string[i])) {
+                str[i] = Character.toUpperCase(string[i]);
+            } else {
+                str[i] = string[i];
+            }
         }
-        return rsl;
+
+        return str;
     }
 }
