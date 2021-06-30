@@ -24,7 +24,7 @@ import java.util.Optional;
 public class OptionalGetAndIsPresent {
 
     public static int get(int[] data, int el) {
-        if(Optional.of(indexOf(data, el)).get().isPresent()) {
+        if (Optional.of(indexOf(data, el)).get().isPresent()) {
             return indexOf(data, el).get();
         } else {
             return -1;
@@ -33,7 +33,7 @@ public class OptionalGetAndIsPresent {
 
     private static Optional<Integer> indexOf(int[] data, int el) {
         for (int i = 0; i < data.length; i++) {
-            if(data[i] == el) {
+            if (data[i] == el) {
                return Optional.of(i);
             }
         }
