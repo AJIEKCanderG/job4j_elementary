@@ -1,9 +1,6 @@
 package ru.job4j.lambda;
 
-import ru.job4j.collections.UniqueName;
-
 import java.util.List;
-import java.util.Objects;
 import java.util.Optional;
 
 /**

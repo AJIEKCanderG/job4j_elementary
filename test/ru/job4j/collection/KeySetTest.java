@@ -1,0 +1,23 @@
+package ru.job4j.collection;
+import org.junit.Test;
+import ru.job4j.collection.KeySet;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+
+import static org.hamcrest.core.Is.is;
+import static org.hamcrest.MatcherAssert.assertThat;
+
+public class KeySetTest {
+    @Test
+    public void main() {
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(out));
+        KeySet.main(null);
+        String ln = System.lineSeparator();
+        String expected = "1 - root@root" + ln
+                + "2 - local@local" + ln
+                + "3 - host@host" + ln;
+        assertThat(out.toString(), is(expected));
+    }
+}
