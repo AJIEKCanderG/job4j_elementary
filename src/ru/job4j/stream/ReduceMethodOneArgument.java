@@ -15,6 +15,6 @@ import java.util.List;
 
 public class ReduceMethodOneArgument {
     public static Integer reduce(List<Integer> list) {
-         return list.stream().reduce((x1,x2) -> x1 * x2).get();
+         return list.stream().reduce((x1, x2) -> x1 * x2).get();
     }
 }
