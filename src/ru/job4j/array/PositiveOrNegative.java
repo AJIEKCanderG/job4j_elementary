@@ -14,7 +14,7 @@ public class PositiveOrNegative {
         int plus = 0;
         int minus = 0;
         for (int datum : data) {
-            if(datum > 0) {
+            if (datum > 0) {
                 plus++;
             } else {
                 minus++;
