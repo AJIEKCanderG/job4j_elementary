@@ -12,11 +12,11 @@ public class ArProgression {
                 break;
             }
         }
-                if (rsl) {
-                    for (int dataum: data) {
-                        sum += dataum;
-                    }
-                }
+        if (rsl) {
+            for (int dataum : data) {
+                sum += dataum;
+            }
+        }
         return sum;
     }
 }
