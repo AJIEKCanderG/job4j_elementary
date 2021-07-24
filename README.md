@@ -1,5 +1,5 @@
 [![Build Status](https://www.travis-ci.com/AJIEKCanderG/job4j_elementary.svg?branch=master)](https://www.travis-ci.com/AJIEKCanderG/job4j_elementary)
-[![codecov](https://codecov.io/gh/AJIEKCanderG/job4j_design/branch/master/graph/badge.svg)](https://codecov.io/gh/AJIEKCanderG/job4j_elementary)
+[![codecov](https://codecov.io/gh/AJIEKCanderG/job4j_elementary/branch/master/graph/badge.svg)](https://codecov.io/gh/AJIEKCanderG/job4j_elementary)
 
 # Стажировка Jobj4
 
