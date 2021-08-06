@@ -3,6 +3,7 @@ package ru.job4j.stream;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.stream.Stream;
 
 /**
  * 1. flatMap для итератора
@@ -15,10 +16,24 @@ public class FlatIt {
         List<Integer> rsl = new ArrayList<>();
         while (it.hasNext()) {
             Iterator<Integer> iterator = it.next();
-            while (iterator.hasNext()) {
-                rsl.add(iterator.next());
-            }
+            Stream.generate(() -> null)
+                    .takeWhile(x -> iterator.hasNext())
+                    .map(n -> iterator.next()).forEach(rsl::add);
         }
         return rsl;
     }
 }
+
+
+/*
+//Solution without stream:
+    List<Integer> rsl = new ArrayList<>();
+        while (it.hasNext()) {
+          Iterator<Integer> iterator = it.next();
+           while (iterator.hasNext()) {
+                 rsl.add(iterator.next());
+            }
+      }
+   return rsl;
+ }
+ */
