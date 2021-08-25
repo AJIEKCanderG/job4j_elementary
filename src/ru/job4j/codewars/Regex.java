@@ -3,7 +3,7 @@ package ru.job4j.codewars;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Main {
+public class Regex {
     public static void main(String[] args) {
         String str = "123456789";
         Pattern pattern = Pattern.compile("(\\d{2})(\\d{2})(\\d{2})(\\d{4})");
