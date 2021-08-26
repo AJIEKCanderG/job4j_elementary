@@ -1,7 +1,5 @@
 package ru.job4j.codewars;
 
-import java.lang.constant.Constable;
-
 public class BinarySearch {
     public static Object searchIntInArray(int[] array, int number) {
         int low = 0;

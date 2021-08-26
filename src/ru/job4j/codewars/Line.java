@@ -12,21 +12,18 @@ public class Line {
     public static String Tickets(int[] peopleInLine) {
        int mon25 = 0;
        int mon50 = 0;
-       int mon100 = 0;
-        for (int i = 0; i < peopleInLine.length; i++) {
-            if (peopleInLine[i] == 25) {
+        for (int j : peopleInLine) {
+            if (j == 25) {
                 mon25++;
-            } else if (peopleInLine[i] == 50 && mon25 > 0) {
+            } else if (j == 50 && mon25 > 0) {
                 mon50++;
                 mon25--;
-            } else if (peopleInLine[i] == 100 && mon25 > 0 && mon50 > 0) {
-                mon100++;
+            } else if (j == 100 && mon25 > 0 && mon50 > 0) {
                 mon50--;
                 mon25--;
-            } else if (peopleInLine[i] == 100 && mon25 > 2) {
-            mon100++;
-            mon25-=3;
-        } else {
+            } else if (j == 100 && mon25 > 2) {
+                mon25 -= 3;
+            } else {
                 return "NO";
             }
         }
