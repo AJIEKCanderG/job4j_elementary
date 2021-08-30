@@ -1,7 +1,7 @@
 package ru.job4j.codewars;
 
 import static org.junit.Assert.*;
-import org.junit.*;
+import org.junit.Test;
 
 public class EvaporatorTest {
     @Test
