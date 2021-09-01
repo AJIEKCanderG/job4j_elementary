@@ -5,10 +5,10 @@ public class BinarySearch {
         int low = 0;
         int mid;
         int high = array.length - 1;
-        while(low <= high) {
+        while (low <= high) {
             mid = low + high;
             int guess = array[mid];
-            if(guess == number) {
+            if (guess == number) {
                 return mid;
             }
             if (guess > number) {

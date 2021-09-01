@@ -28,6 +28,10 @@ public class Regex {
         String d= "45385593107843568";
         d = d.replaceAll("([0-4])", "0").replaceAll("([5-9])", "1");
         System.out.println(d);
+
+        // Вместо +  строк
+        String name = "Alex";
+        System.out.printf("Hello, %s, how are you doing today?%n", name);
     }
 }
 
