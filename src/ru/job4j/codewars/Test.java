@@ -4,13 +4,30 @@ import java.util.Scanner;
 
 public class Test {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String room = scanner.next();
-        String cond = scanner.next() + scanner.nextLine();
-        String mode = scanner.nextLine();
+        int i = 5;
+        int n = 10;
+        int j = 1;
+        int result = (n + i ) % i ;
+     //   System.out.println(result);
 
+        int n1 = 10;
+        int i1 = 5;
+        int j1 = 1;
+        int result1 =  i1 - 2;
+        System.out.println(result1);
     }
 }
+ /*       int n = scanner.nextInt();
+        int sum = 0;
+        if (scanner.hasNextInt()) {
+            for (int i = scanner.nextInt(); i <= n; i++) {
+                sum += i;
+            }
+        }
+        System.out.println(sum / n);
+        System.out.println(sum);
+    }
+}*/
       /* Scanner scanner = new Scanner(System.in);
         String room = Integer.toString(scanner.nextInt());
         String cond = Integer.toString(scanner.nextInt());
