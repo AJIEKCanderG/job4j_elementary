@@ -4,17 +4,7 @@ import java.util.Scanner;
 
 public class Test {
     public static void main(String[] args) {
-        int i = 5;
-        int n = 10;
-        int j = 1;
-        int result = (n + i ) % i ;
-     //   System.out.println(result);
-
-        int n1 = 10;
-        int i1 = 5;
-        int j1 = 1;
-        int result1 =  i1 - 2;
-        System.out.println(result1);
+        System.out.println(-7/2);
     }
 }
  /*       int n = scanner.nextInt();
