@@ -41,10 +41,10 @@ public class BuildingSchool {
         String s = br.readLine();
         String[] s1 = s.split(" ");
         if (n % 2 == 0) {
-            int x = (Integer.parseInt(s1[n/2]) + Integer.parseInt(s1[(n/2)  - 1]))/2;
+            int x = (Integer.parseInt(s1[n / 2]) + Integer.parseInt(s1[(n / 2) - 1])) / 2;
             System.out.println(x);
         } else {
-            System.out.println(Integer.parseInt(s1[n/2]));
+            System.out.println(Integer.parseInt(s1[n / 2]));
         }
     }
 }

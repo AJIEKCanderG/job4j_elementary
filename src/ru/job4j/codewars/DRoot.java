@@ -11,7 +11,7 @@ package ru.job4j.codewars;
  */
 
 public class DRoot {
-    public static int digital_root(int n) {
+    public static int digitalRoot(int n) {
         int rsl = 0;
         String[] str = Integer.toString(n).split("");
         for (String value : str) {

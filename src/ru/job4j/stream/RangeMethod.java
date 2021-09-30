@@ -2,7 +2,6 @@ package ru.job4j.stream;
 
 import java.util.stream.IntStream;
 
-
 /**
  * 1.7. Создание стрима примитивов. Методы range() и rangeClosed().
  * Стримы целых чисел (IntStream, LongSteam) имеют также еще один способ создания стрима.

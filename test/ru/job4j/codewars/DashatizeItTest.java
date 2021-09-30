@@ -6,7 +6,6 @@ import static org.junit.Assert.assertEquals;
 
 public class DashatizeItTest {
 
-
         @Test
         public void testBasic() {
             assertEquals("2-7-4", DashatizeIt.dashatize(274));

@@ -14,7 +14,6 @@ import java.util.Comparator;
  * Ваша задача получить null-frendly компаратор для строки.
  */
 
-
 public class NullLastMethod {
     public static Comparator<String> nullLast() {
         return Comparator.nullsLast(Comparator.naturalOrder());

@@ -7,7 +7,6 @@ import static org.junit.Assert.assertNull;
 
 public class JadenCaseTest {
 
-
     JadenCase jadenCase = new JadenCase();
 
     @Test

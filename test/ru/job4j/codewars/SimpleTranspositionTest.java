@@ -14,6 +14,7 @@ public class SimpleTranspositionTest {
         doTest("Conscience does make cowards of us all", "Cncec osmk oad fu losinede aecwrso sal");
         doTest("Imagination is more important than knowledge", "Iaiaini oeipratta nwegmgnto smr motn hnkolde");
     }
+
     private void doTest(String text, String expected) {
         assertEquals(expected, SimpleTransposition.transposition(text));
     }

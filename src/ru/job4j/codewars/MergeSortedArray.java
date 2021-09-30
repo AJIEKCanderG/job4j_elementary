@@ -17,7 +17,6 @@ import java.util.Arrays;
  * а последние n элементы установлены на 0 и должны игнорироваться. nums2 имеет длину n.
  */
 
-
 public class MergeSortedArray {
     public static int[] merge(int[] nums1, int m, int[] nums2, int n) {
         int i = m - 1, j = n - 1, k = m + n - 1;

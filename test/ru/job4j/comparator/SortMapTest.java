@@ -22,7 +22,4 @@ public class SortMapTest {
         Map<Integer, String> result = SortMap.sort(input);
         Assert.assertEquals(expect, result);
     }
-
-
-
 }

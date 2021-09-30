@@ -12,11 +12,11 @@ package ru.job4j.codewars;
  */
 
 public class WordValues {
-    public static int [] nameValue(String [] arr){
+    public static int[] nameValue(String[] arr) {
         int[] result = new int[arr.length];
         for (int i = 0; i < arr.length; i++) {
             for (char ch : arr[i].toCharArray()) {
-                if(!Character.isWhitespace(ch)) {
+                if (!Character.isWhitespace(ch)) {
                     result[i] += ch - 96;
                 }
             }

@@ -22,7 +22,7 @@ public class CountDig {
             int sqr = i * i;
             String[] str = Integer.toString(sqr).split("");
             for (String c : str) {
-                if(c.equals(Integer.toString(d))) {
+                if (c.equals(Integer.toString(d))) {
                     count++;
                 }
             }

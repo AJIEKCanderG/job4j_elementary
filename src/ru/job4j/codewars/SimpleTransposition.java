@@ -14,11 +14,11 @@ package ru.job4j.codewars;
 
 public class SimpleTransposition {
     public static String transposition(String text) {
-        char[] ch  = text.toCharArray();
+        char[] ch = text.toCharArray();
         StringBuilder str1 = new StringBuilder();
         StringBuilder str2 = new StringBuilder();
         for (int i = 0; i < ch.length; i++) {
-            if(i % 2 == 0) {
+            if (i % 2 == 0) {
                 str1.append(ch[i]);
             } else {
                 str2.append(ch[i]);

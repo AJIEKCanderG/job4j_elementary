@@ -22,7 +22,7 @@ public class StockList {
     public static String stockSummary(String[] lstOfArt, String[] lstOf1stLetter) {
         StringBuilder rsl = new StringBuilder();
         int sum = 0;
-        if( lstOf1stLetter.length == 0 || lstOfArt.length == 0) {
+        if (lstOf1stLetter.length == 0 || lstOfArt.length == 0) {
             return "";
         }
         for (String s : lstOf1stLetter) {

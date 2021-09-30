@@ -8,8 +8,8 @@ package ru.job4j.codewars;
  * ""             =>  ""
  */
 
-public class camelCasing {
-    public static String camelCase(String input) {
+public class CamelCasing {
+    public static String cameCase(String input) {
         return input.replaceAll("([A-Z])", " $1").trim();
     }
 }

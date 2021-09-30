@@ -20,7 +20,6 @@ public class Farm {
         return rsl;
     }
 
-
     public static class Animal {
         private String name;
 

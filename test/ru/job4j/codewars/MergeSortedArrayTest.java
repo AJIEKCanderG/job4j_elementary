@@ -50,6 +50,4 @@ public class MergeSortedArrayTest {
         );
         assertThat(result, is(expect));
     }
-
-
 }

@@ -9,7 +9,7 @@ package ru.job4j.codewars;
  */
 
 public class Line {
-    public static String Tickets(int[] peopleInLine) {
+    public static String tickets(int[] peopleInLine) {
        int mon25 = 0;
        int mon50 = 0;
         for (int j : peopleInLine) {

@@ -14,9 +14,8 @@ import java.util.stream.Stream;
  * Ниже, приведен код. Создайте стрим из переданной коллекции
  */
 
-
 public class StreamMethod {
     public static Stream<Integer> createStream(Collection<Integer> data) {
-       return data.stream();
+        return data.stream();
     }
 }

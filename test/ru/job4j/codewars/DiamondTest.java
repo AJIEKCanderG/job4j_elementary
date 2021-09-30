@@ -8,19 +8,19 @@ import static org.junit.Assert.assertNull;
 public class DiamondTest {
     @Test
     public void testDiamond3() {
-        String expected = " *\n" +
-                "***\n" +
-                " *\n";
+        String expected = " *\n"
+                + "***\n"
+                + " *\n";
         assertEquals(expected, Diamond.print(3));
     }
 
     @Test
     public void testDiamond5() {
-        String expected = "  *\n" +
-                " ***\n" +
-                "*****\n" +
-                " ***\n" +
-                "  *\n";
+        String expected = "  *\n"
+                + " ***\n"
+                + "*****\n"
+                + " ***\n"
+                + "  *\n";
         assertEquals(expected, Diamond.print(5));
     }
 

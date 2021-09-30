@@ -15,12 +15,12 @@ package ru.job4j.codewars;
 
 public class Evaporator {
 
-    public static int evaporator(double content, double evap_per_day, double threshold) {
+    public static int evaporator(double content, double evapperday, double threshold) {
         int day = 0;
         double loss;
         double outOfUse =  content * (threshold / 100);
-        while(content > outOfUse) {
-            loss = (content * evap_per_day) / 100;
+        while (content > outOfUse) {
+            loss = (content * evapperday) / 100;
             content = content - loss;
             day++;
         }

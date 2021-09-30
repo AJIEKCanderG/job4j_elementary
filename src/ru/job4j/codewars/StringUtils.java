@@ -1,18 +1,17 @@
 package ru.job4j.codewars;
 
-/** altERnaTIng cAsE <=> ALTerNAtiNG CaSe
- *
+/**
+ * altERnaTIng cAsE <=> ALTerNAtiNG CaSe
  */
 
 public class StringUtils {
     public static String toAlternativeString(String string) {
         char[] ch = string.toCharArray();
         StringBuilder str = new StringBuilder();
-        for(char c : ch) {
-            if(Character.isUpperCase(c)) {
+        for (char c : ch) {
+            if (Character.isUpperCase(c)) {
                 c = Character.toLowerCase(c);
-            }
-            else if(Character.isLowerCase(c)) {
+            } else if (Character.isLowerCase(c)) {
                 c = Character.toUpperCase(c);
             }
             str.append(c);
