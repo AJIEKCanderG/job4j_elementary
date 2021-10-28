@@ -9,9 +9,9 @@ public class Regex {
         Pattern pattern = Pattern.compile("(\\d{2})(\\d{2})(\\d{2})(\\d{4})");
         Matcher matcher = pattern.matcher(string);
         String strNew = matcher.replaceAll("$4 $3 $2 $1");
-        System.out.println(strNew);
+        System.out.println("strNew: " + strNew);
         string = string.replaceAll("(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3");
-        System.out.println(string);
+        System.out.println("string :" + string);
 
         //Example use regex
         int num = -28369;
