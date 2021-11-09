@@ -3,7 +3,7 @@ package ru.job4j.codewars.strings;
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
-public class StringName {
+public class StringBestPractic {
     public static void main(String[] args) {
 
         String video = "video_0.mp4";
@@ -55,6 +55,11 @@ public class StringName {
         }
         System.out.println(sb);
 
+        /*
+         Реверс строки
+         */
+        String string = "abcde";
+        System.out.println(new StringBuilder(string).reverse());
 
     }
 }
