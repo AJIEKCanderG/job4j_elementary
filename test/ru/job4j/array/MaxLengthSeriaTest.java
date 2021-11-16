@@ -8,6 +8,7 @@ public class MaxLengthSeriaTest {
 
     @Test
     public void test() {
+        assertEquals(0, MaxLengthSeria.find(new int[] {}));
         assertEquals(1, MaxLengthSeria.find(new int[] {1}));
         assertEquals(1, MaxLengthSeria.find(new int[] {2, 1}));
         assertEquals(2, MaxLengthSeria.find(new int[] {1, 2}));
