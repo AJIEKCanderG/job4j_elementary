@@ -1,4 +1,5 @@
 [![Build Status](https://www.travis-ci.com/AJIEKCanderG/job4j_elementary.svg?branch=master)](https://www.travis-ci.com/AJIEKCanderG/job4j_elementary)
+[![Java CI with Maven](https://github.com/AJIEKCanderG/job4j_elementary/actions/workflows/maven.yml/badge.svg)](https://github.com/AJIEKCanderG/job4j_elementary/actions/workflows/maven.yml)
 [![codecov](https://codecov.io/gh/AJIEKCanderG/job4j_elementary/branch/master/graph/badge.svg?token=1VWAEL7FVP)](https://codecov.io/gh/AJIEKCanderG/job4j_elementary)
 
 # Стажировка Jobj4
