@@ -13,7 +13,7 @@
         <maven.compiler.source>14</maven.compiler.source>
         <maven.compiler.target>14</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <checkstyle.config.location>C:\projects\job4j_tracker\checkstyle.xml</checkstyle.config.location>
+        <checkstyle.config.location>C:\projects\job4j_elementary\checkstyle.xml</checkstyle.config.location>
     </properties>
 
     <dependencies>
@@ -56,7 +56,7 @@
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.8.7</version>
+                <version>0.8.6</version>
                 <executions>
                     <execution>
                         <goals>
