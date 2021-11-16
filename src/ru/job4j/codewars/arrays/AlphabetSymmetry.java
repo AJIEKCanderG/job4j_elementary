@@ -7,7 +7,7 @@ package ru.job4j.codewars.arrays;
  * @author Ajiekcander
  */
 public class AlphabetSymmetry {
-    public static int[] solve(String[] arr){
+    public static int[] solve(String[] arr) {
         String s = "abcdefghijklmnopqrstuvwxyz";
         int[] in = new int[arr.length];
         int count = 0;

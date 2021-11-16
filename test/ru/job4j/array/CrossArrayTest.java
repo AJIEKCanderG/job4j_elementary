@@ -22,6 +22,17 @@ public class CrossArrayTest {
     }
 
     @Test
+    public void whenHasTwoCross() {
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(out));
+        CrossArray.printCrossEl(
+                new int[] {1, 3},
+                new int[] {3, 1}
+        );
+        assertThat(out.toString(), is("3" + System.lineSeparator() + "1" + System.lineSeparator()));
+    }
+
+    @Test
     public void whenNotCross() {
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         System.setOut(new PrintStream(out));
