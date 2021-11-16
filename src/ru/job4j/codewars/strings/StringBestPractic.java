@@ -34,7 +34,7 @@ public class StringBestPractic {
 
         /* Соединие строк через запятуюю
          */
-        String[] arr = {"Cheese","Milk","Chocolate"};
+        String[] arr = {"Cheese", "Milk", "Chocolate"};
         System.out.println("I like " + String.join(", ", arr) + "!");
         System.out.printf("I like %s!%n", String.join(", ", arr));
 
@@ -46,11 +46,11 @@ public class StringBestPractic {
          */
         int n = 5;
         Object toRepeat = "New String";
-        if(!(toRepeat instanceof String)) {
+        if (!(toRepeat instanceof String)) {
             System.out.println("Not a string");
         }
         StringBuilder sb = new StringBuilder();
-        for ( int i = 0; i < n; i++) {       // укороченный вариант  sb.append(String.valueOf(toRepeat).repeat(n));
+        for (int i = 0; i < n; i++) {       // укороченный вариант  sb.append(String.valueOf(toRepeat).repeat(n));
             sb.append(toRepeat);
         }
         System.out.println(sb);

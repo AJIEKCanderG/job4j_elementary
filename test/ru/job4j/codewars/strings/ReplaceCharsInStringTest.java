@@ -1,7 +1,9 @@
 package ru.job4j.codewars.strings;
 
 import org.junit.Test;
+
 import static org.junit.Assert.assertEquals;
+
 import org.junit.runners.JUnit4;
 
 import java.util.Arrays;
@@ -11,7 +13,7 @@ import java.util.stream.Stream;
 import java.util.stream.IntStream;
 
 public class ReplaceCharsInStringTest {
-    private static final Random random = new Random();
+    private static final Random RANDOM = new Random();
 
     @Test
     public void testEmpty() {
@@ -59,15 +61,13 @@ public class ReplaceCharsInStringTest {
     }
 
     private static IntStream rndcp(int fcp, int lcp) {
-        return random.ints(fcp, lcp);
+        return RANDOM.ints(fcp, lcp);
     }
 }
 
 class CorrectSolution {
     public static String maskify(String str) {
-        return (str.length() <= 4) ?
-                str :
-                String.valueOf(doChain(new char[str.length() - 4], chs -> Arrays.fill(chs, '#')))
+        return (str.length() <= 4) ? str : String.valueOf(doChain(new char[str.length() - 4], chs -> Arrays.fill(chs, '#')))
                         .concat(str.substring(str.length() - 4));
     }
 

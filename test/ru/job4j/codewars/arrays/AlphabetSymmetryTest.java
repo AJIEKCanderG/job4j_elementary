@@ -8,8 +8,8 @@ import static org.junit.Assert.assertArrayEquals;
 
 public class AlphabetSymmetryTest {
 
-    private static final String a = "abcdefghijklmnopqrstuvwxyz";
-    private static final Random random = new Random();
+    private static final String A = "abcdefghijklmnopqrstuvwxyz";
+    private static final Random RANDOM = new Random();
 
     private static int[] mySolve(String[] arr) {
         int[] s = new int[arr.length];
@@ -18,7 +18,7 @@ public class AlphabetSymmetryTest {
             t = Math.min(arr[i].length(), 26);
             c = 0;
             for (j = 0; j < t; j++) {
-                if (Character.toLowerCase(arr[i].charAt(j)) == a.charAt(j)) {
+                if (Character.toLowerCase(arr[i].charAt(j)) == A.charAt(j)) {
                     c++;
                 }
             }
@@ -28,7 +28,7 @@ public class AlphabetSymmetryTest {
     }
 
     private static int random(int min, int max) {
-        return random.nextInt(max - min) + min;
+        return RANDOM.nextInt(max - min) + min;
     }
 
     @Test
@@ -41,7 +41,7 @@ public class AlphabetSymmetryTest {
 
     @Test
     public void randomTest() {
-        final String upper = a.toUpperCase();
+        final String upper = A.toUpperCase();
         String[] l;
         int j, k, r, r0, r1, r2, d;
         StringBuilder s;
@@ -55,12 +55,12 @@ public class AlphabetSymmetryTest {
                 r2 = random(r1, 26);
                 s = new StringBuilder();
                 for (k = 0; k < r0; k++) {
-                    s.append(a.charAt(random(0, 26)));
+                    s.append(A.charAt(random(0, 26)));
                 }
                 s1 = upper.substring(0, r1) + s.toString().toUpperCase();
                 d = r1 - r0;
                 if (d >= 0) {
-                    s1 += a.substring(d, r2);
+                    s1 += A.substring(d, r2);
                 }
                 l[j - 2] = s1;
             }

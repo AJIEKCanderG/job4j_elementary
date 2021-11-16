@@ -9,10 +9,11 @@ import java.util.stream.Collectors;
  * 'alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta'
  * Output:
  * 'alpha beta gamma delta'
+ *
  * @author Ajiekcander
  */
 public class RemoveDuplicateWords {
-    public static String removeWords(String s){
+    public static String removeWords(String s) {
         return Arrays.stream(s.split("\\s+")).distinct().collect(Collectors.joining(" "));
     }
 }
