@@ -26,14 +26,3 @@ public class JadenCase {
 
     }
 }
-
-
-// Second Solution with char array
-
-/*    char[] ch = phrase.toCharArray();
-      for (int i = 0; i < ch.length; i++) {
-      if(i == 0 || ch[i-1] == ' ') {
-       ch[i] = Character.toUpperCase(ch[i]);
-        }
-     }
-   return new String(ch);*/

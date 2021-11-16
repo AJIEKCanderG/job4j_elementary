@@ -13,7 +13,7 @@ import java.util.Map;
  * Map<Integer, String> map = new HashMap<>();
  * map.put(1, "root"); добавляем значение пару ключ-значение в отображение
  * System.out.println(map.get(1)); в консоль будет выведена строка root
- * map.computeIfPresent(1, (key, value) -> value + "@root"); // изменяем значение которое ЕСТЬ в отображении
+ * map.computeIfPresent(1, (key, value) -> value + "@root"); изменяем значение которое ЕСТЬ в отображении
  * System.out.println(map.get(1)); в консоль будет выведена строка root@root
  * т.е. с помощью лямбда выражения мы получаем доступ к текущему значению, который сопоставлен с ключом,
  * который мы передали в метод (вычисление производит функциональный интерфейс BiFunction).

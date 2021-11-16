@@ -23,17 +23,3 @@ public class FlatIt {
         return rsl;
     }
 }
-
-
-/*
-//Solution without stream:
-    List<Integer> rsl = new ArrayList<>();
-        while (it.hasNext()) {
-          Iterator<Integer> iterator = it.next();
-           while (iterator.hasNext()) {
-                 rsl.add(iterator.next());
-            }
-      }
-   return rsl;
- }
- */
