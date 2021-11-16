@@ -1,5 +1,11 @@
 package ru.job4j.codewars;
 
+import java.util.Map;
+
+import static java.util.Arrays.stream;
+import static java.util.stream.Collectors.groupingBy;
+import static java.util.stream.Collectors.joining;
+
 /**
  * A bookseller has lots of books classified in 26 categories labeled A, B, ... Z. Each book has a code c of 3, 4, 5 or more characters. The 1st character of a code is a capital letter which defines the book category.
  * In the bookseller's stocklist each code c is followed by a space and by a positive integer n (int n >= 0) which indicates the quantity of books of this code in stock.
@@ -17,8 +23,6 @@ package ru.job4j.codewars;
  */
 
 public class StockList {
-    // 1st parameter is the stocklist (L in example),
-    // 2nd parameter is list of categories (M in example)
     public static String stockSummary(String[] lstOfArt, String[] lstOf1stLetter) {
         StringBuilder rsl = new StringBuilder();
         int sum = 0;
@@ -40,20 +44,3 @@ public class StockList {
     }
 }
 
-
-// 2nd solution
-/*
-   private static int stockCount(final String s) {
-       return Integer.valueOf(s.split(" ")[1]);
-   }
-   public static String stockSummary(final String[] stock, final String[] categories) {
-    if (stock.length == 0 || categories.length ==  0)
-      return "";
-    final Map<String, Integer> counts = stream(stock)
-        .collect(groupingBy(s -> s.substring(0, 1), summingInt(StockList::stockCount)));
-    return stream(categories)
-        .map(s -> "(" + s + " : " + counts.getOrDefault(s, 0) + ")")
-        .collect(joining(" - "));
-  }
-}
- */

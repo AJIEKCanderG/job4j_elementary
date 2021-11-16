@@ -6,13 +6,13 @@ public class Square {
         for (int index = 0; index < bound; index++) {
             rst[index] = index * index;
         }
-            return rst;
+        return rst;
     }
 
-        public static void main(String[] args) {
-            int[] array = calculate(4);
-            for (int i : array) {
-                System.out.println(i);
-            }
+    public static void main(String[] args) {
+        int[] array = calculate(4);
+        for (int i : array) {
+            System.out.println(i);
         }
     }
+}

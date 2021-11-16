@@ -68,7 +68,7 @@ public class ThenComparingMethod {
     }
 
     public static Comparator<User> descByAge() {
-          return Comparator.reverseOrder();
+        return Comparator.reverseOrder();
     }
 
 }

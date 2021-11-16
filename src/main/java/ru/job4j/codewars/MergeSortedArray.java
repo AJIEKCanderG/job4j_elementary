@@ -8,7 +8,7 @@ import java.util.Arrays;
  * 0 <= m, n <= 200
  * 1 <= m + n <= 200
  * -109 <= nums1[i], nums2[j] <= 109
- *
+ * <p>
  * Вам даны два целых массива nums1и nums2, отсортированных в неубывающем порядке , и два целых числа mи n,
  * представляющие количество элементов в nums1и nums2 соответственно.
  * Объединить nums1 и nums2в единый массив, отсортированный в неубывающем порядке .
@@ -34,39 +34,3 @@ public class MergeSortedArray {
         return nums1;
     }
 }
-/*        int j = 0;
-        int k = 0;
-        if(m == 0 && n  > 0) {
-            nums1 =  Arrays.copyOf(nums2, n + m);
-        }
-*//*        else if (n == 0 ) {
-            nums1 = Arrays.copyOf(nums1, n + m);
-        }*//*
-        else if (n > 0 && m > 0 ) {
-            for (int i = 0; i < nums1.length; i++) {
-                if(j < m && nums1[i] > nums2[j]) {
-                    int temp = nums1[i];
-                    nums1[i] = nums2[j];
-                    nums2[j] = temp;
-                    j++;
-                }
-                if(k < m && nums1[i] == 0) {
-                    int temp = nums1[i];
-                    nums1[i] = nums2[k];
-                    nums2[k] = temp;
-                    k++;
-                }
-            }
-        }
-        return nums1;
-    }
-}*/
-/*
- for(int i=m;i<m+n;i++){
-            nums1[i]=nums2[i-m];
-        }
-        Arrays.sort(nums1);
-    }
-}
- }*/
-

@@ -17,5 +17,4 @@ public class BoxedMethod {
     public static List<Integer> boxed(int[] data) {
         return Arrays.stream(data).boxed().collect(Collectors.toList());
     }
-
 }

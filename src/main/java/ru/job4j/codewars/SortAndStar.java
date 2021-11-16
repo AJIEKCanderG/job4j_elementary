@@ -12,11 +12,10 @@ import java.util.Arrays;
 public class SortAndStar {
     public static String twoSort(String[] s) {
         Arrays.sort(s);
+        return s[0].replace("", "***").replaceAll("^\\*\\*\\*", "").replaceAll("\\*\\*\\*$", "");
+    }
 
-     return s[0].replace("", "***").replaceAll("^\\*\\*\\*", "").replaceAll("\\*\\*\\*$", "");
+    public static String twoSortSecond(String[] s) {
+        return String.join("***", s[0].split(""));
     }
 }
-
-/* Best solution
-return String.join("***", s[0].split(""));
-*/

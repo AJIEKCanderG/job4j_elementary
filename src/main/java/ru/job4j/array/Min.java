@@ -7,20 +7,7 @@ public class Min {
             if (min > i) {
                 min = i;
             }
-            /* проверить, что эталон больше, чем элемент. записать в эталон элемент массива. */
         }
         return min;
     }
 }
-
-
-//     int min = array[0];
-//     for (int j = 0; j < array.length; j++) {
-//     int i = array[j];
-//     if (min > i) {
-//     min = i;
-//     }
-//  }
-//     return min;
-//  }
-//}

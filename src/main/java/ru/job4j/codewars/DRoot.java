@@ -5,8 +5,8 @@ package ru.job4j.codewars;
  * Given n, take the sum of the digits of n. If that value has more than one digit, continue reducing
  * in this way until a single-digit number is produced. The input will be a non-negative integer.
  * Examples
- *     16  -->  1 + 6 = 7
- *    942  -->  9 + 4 + 2 = 15  -->  1 + 5 = 6
+ * 16  -->  1 + 6 = 7
+ * 942  -->  9 + 4 + 2 = 15  -->  1 + 5 = 6
  * 132189  -->  1 + 3 + 2 + 1 + 8 + 9 = 24  -->  2 + 4 = 6
  */
 
@@ -27,23 +27,16 @@ public class DRoot {
         }
         return rsl;
     }
+
+    public static int digitalRootSecond(int n) {
+        while (n > 9) {
+            n = n / 10 + n % 10;
+        }
+        return (n);
+    }
+
+    public static int digitalRootThree(int n) {
+        return (n != 0 && n % 9 == 0) ? 9 : n % 9;
+    }
 }
-
-
-/* Best Solution #1
-public class DRoot {
-  public static int digital_root(int n) {
-    while(n > 9){
-      n = n/10 + n % 10;
-      }
-    return(n);
-  }
-}  */
-
-/* Best Solution #2
-public class DRoot {
-  public static int digital_root(int n) {
-    return (n != 0 && n%9 == 0) ? 9 : n % 9;
-  }
-} */
 

@@ -11,6 +11,7 @@ public class BankService {
     /**
      * Метод добавляет пользователя в систему.
      * Метод принимает два параметра: пользователя и список счетов.
+     *
      * @param user пользователь которого добавляем.
      */
 
@@ -22,8 +23,9 @@ public class BankService {
     /**
      * Метод ищет пользователя по паспорту, затем получаем список его счетов.
      * Метод добавляет новый счет к пользователю.
+     *
      * @param passport по паспорту ищем пользователя.
-     * @param account получаем список счетов.
+     * @param account  получаем список счетов.
      */
     public void addAccount(String passport, Account account) {
         Optional<User> user = findByPassport(passport);
@@ -39,11 +41,12 @@ public class BankService {
 
     /**
      * Метод ищет пользователя по паспорту.
+     *
      * @param passport паспорт пользователя.
      * @return возвращает найденного пользователя.
      */
     public Optional<User> findByPassport(String passport) {
-        return  users.keySet()
+        return users.keySet()
                 .stream()
                 .filter(user -> user.getPassport().equals(passport))
                 .findFirst();
@@ -51,8 +54,9 @@ public class BankService {
 
     /**
      * Метод ищет счет пользователя по реквизитам.
-     * @param passport паспорт пользователя.
-     * Ищем список счетов найденного пользователя.
+     *
+     * @param passport  паспорт пользователя.
+     *                  Ищем список счетов найденного пользователя.
      * @param requisite реквизиты счета.
      * @return возвращает найденный счет по реквизитам.
      */
@@ -67,11 +71,12 @@ public class BankService {
 
     /**
      * Метод реализует перечисление денег с одного счета на другой.
-     * @param srcPassport паспорт пользователя который перечисляет денежные средства
-     * @param srcRequisite реквизиты пользователя который перечисляет денежные средства
-     * @param destPassport паспорт пользователя который получает денежные средства
+     *
+     * @param srcPassport   паспорт пользователя который перечисляет денежные средства
+     * @param srcRequisite  реквизиты пользователя который перечисляет денежные средства
+     * @param destPassport  паспорт пользователя который получает денежные средства
      * @param destRequisite реквизиты на которые перечисляются денежные средства
-     * @param amount итоговая сумма на счете после получения перевода.
+     * @param amount        итоговая сумма на счете после получения перевода.
      */
 
     public void transferMoney(String srcPassport, String srcRequisite,

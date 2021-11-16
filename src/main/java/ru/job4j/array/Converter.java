@@ -13,10 +13,10 @@ package ru.job4j.array;
 public class Converter {
     public static int[][] convertInSquareArray(int[][] array) {
         int sum = 0;
-        for (int[] ints : array) {  //вычисляю кол-во элементов входящего двухмерного массива, пройдясь по длинам строк/
+        for (int[] ints : array) {
             sum += ints.length;
         }
-        int n = (int) Math.ceil(Math.sqrt(sum)); //нахожу длину нашего нового двухмерного квадратного массива/
+        int n = (int) Math.ceil(Math.sqrt(sum));
         int k = 0;
         int m = 0;
         int[][] result = new int[n][n];
@@ -34,7 +34,7 @@ public class Converter {
 }
 
 /* Решение №2 через одномерный массив */
-/*       int[] rsl = new int[sum]; // задаю новый одномерный массив в который сложим входящий двухмерный сначала/
+/*       int[] rsl = new int[sum];
          for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
                 if (k < rsl.length) {
@@ -42,7 +42,7 @@ public class Converter {
                 }
             }
         }
-       for (int i = 0; i < n; i++) {  // из одномерного массива  получаю квадратный двухмерный/
+       for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 if (m < rsl.length) {
                     result[i][j] = rsl[m++];

@@ -1,6 +1,7 @@
 package ru.job4j.codewars;
 
-/** Is it a number?
+/**
+ * Is it a number?
  * Given a string s, write a method (function) that will return true if its a valid single integer or floating number
  * or false if its not.
  * Valid examples, should return true:
@@ -32,14 +33,3 @@ public class MyUtilities {
         return true;
     }
 }
-
-/*
- try {
-      Double.parseDouble(s);
-      return true;
-    } catch(Exception e) {
-      return false;
-    }
-  }
-}
- */

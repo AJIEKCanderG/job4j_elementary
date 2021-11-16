@@ -1,5 +1,10 @@
 package ru.job4j.array;
 
+/**
+ * Заданы два числовых массива.
+ * Нужно вывести на консоль числа, которые есть одновременно в первом и втором массиве.
+*/
+
 public class CrossArray {
     public static void printCrossEl(int[] left, int[] right) {
         for (int k : right) {
@@ -11,20 +16,3 @@ public class CrossArray {
         }
     }
 }
-
-/*Заданы два числовых массива.
-Нужно вывести на консоль числа, которые есть одновременно в первом и втором массиве.*/
-
-/*foreach*/
-/*
-public class CrossArray {
-    public static void printCrossEl(int[] left, int[] right) {
-        for (int k : right) {
-            for (int j : left) {
-                if (k == j) {
-                    System.out.println(j);
-                }
-            }
-        }
-    }
-}*/

@@ -18,7 +18,7 @@ import java.util.function.Consumer;
 
 public class ConsumerAndThen {
     public static Consumer<String> consumer(String input) {
-        Consumer<String> print = System.out::print;  //(i) -> System.out.print(i);
+        Consumer<String> print = System.out::print;
         Consumer<String> ln = (i) -> System.out.println();
         return  print.andThen(ln);
     }

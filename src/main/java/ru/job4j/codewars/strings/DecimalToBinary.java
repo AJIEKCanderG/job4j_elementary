@@ -3,6 +3,7 @@ package ru.job4j.codewars.strings;
 /**
  * Перевод десятичного числа в двоичную форму, его реверс и обратно в десятичную.
  * For example, the number 417 is 110100001 in binary. Reversing the binary is 100001011 which is 267.
+ *
  * @author Ajiekcander
  */
 public class DecimalToBinary {

@@ -13,6 +13,6 @@ public class Jackpot {
             }
         }
 
-    return true;
-}
+        return true;
+    }
 }

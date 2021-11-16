@@ -17,7 +17,7 @@ public class Split {
         int commonCount = 0;
         int index = 0;
         for (char ch : str) {
-            if (ch != c)  {
+            if (ch != c) {
                 rsl[index++] = ch;
             } else {
                 result[commonCount] = Arrays.copyOf(rsl, index);

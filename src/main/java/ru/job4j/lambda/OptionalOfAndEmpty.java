@@ -23,12 +23,3 @@ public class OptionalOfAndEmpty {
         return strings.contains(value) ? Optional.of(value) : Optional.empty();
     }
 }
-/*        Optional<String> str = Optional.empty();
-        for (String st : strings) {
-            if (st.equals(value)) {
-               str = Optional.of(st);
-            }
-        }
-        return str;
-    }
-}*/

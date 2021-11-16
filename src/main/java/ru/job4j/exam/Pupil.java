@@ -1,7 +1,7 @@
 package ru.job4j.exam;
 import java.util.List;
-/*
-  Класс Pupil описывает ученика.
+/**
+ * Класс Pupil описывает ученика.
  */
 
 public class Pupil {

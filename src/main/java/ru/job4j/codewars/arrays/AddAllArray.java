@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 /**
  * Заполнить массив одинаковыми значениями   Arrays.fill
+ *
  * @author Ajiekcander
  */
 public class AddAllArray {

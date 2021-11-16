@@ -1,7 +1,7 @@
 package ru.job4j.exam;
 
-/*
-Класс Analyze получает статистику по аттестатам.
+/**
+ * Класс Analyze получает статистику по аттестатам.
  */
 
 import java.util.Comparator;

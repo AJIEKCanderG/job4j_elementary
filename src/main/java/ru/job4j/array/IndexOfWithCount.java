@@ -6,7 +6,7 @@ public class IndexOfWithCount {
         for (int i = 0; i < string.length; i++) {
             if (string[i] == c) {
                 number--;
-                            }
+            }
             if (number == 0) {
                 return i;
             }

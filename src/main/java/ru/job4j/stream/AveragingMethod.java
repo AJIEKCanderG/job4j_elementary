@@ -31,7 +31,6 @@ public class AveragingMethod {
     public static class Worker {
 
         private final int age;
-
         private final Company company;
 
         public Worker(int age, Company company) {
@@ -54,5 +53,4 @@ public class AveragingMethod {
                         .groupingBy(worker -> worker.getCompany().getName(),
                                 Collectors.averagingDouble(Worker::getAge)));
     }
-
 }

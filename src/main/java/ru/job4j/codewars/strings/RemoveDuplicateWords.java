@@ -17,10 +17,3 @@ public class RemoveDuplicateWords {
         return Arrays.stream(s.split("\\s+")).distinct().collect(Collectors.joining(" "));
     }
 }
-
-
-/*
-return Arrays.stream(s.split(" "))
-                     .distinct()
-                     .collect(joining(" "));
- */

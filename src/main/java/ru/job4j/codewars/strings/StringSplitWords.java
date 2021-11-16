@@ -11,14 +11,3 @@ public class StringSplitWords {
         return s.replaceAll("(.{" + partLength + "})(?!$)", "$1 ");
     }
 }
-
-
-/*
-    StringBuilder sb = new StringBuilder(s);
-      for (int i = partLength++; i < sb.length(); i += partLength){
-        sb.insert(i, " ");
-        }
-     return sb.toString();
-  }
-}
-*/

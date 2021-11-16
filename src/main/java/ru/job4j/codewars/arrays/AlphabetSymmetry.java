@@ -1,9 +1,11 @@
 package ru.job4j.codewars.arrays;
 
-/**  7 kyu   Alphabet symmetry
+/**
+ * 7 kyu   Alphabet symmetry
  * Учитывая массив слов, верните массив количества букв,
  * занимающих свои позиции в алфавите для каждого слова. Например,
  * solve(["abode","ABc","xyzD"]) = [4, 3, 1]
+ *
  * @author Ajiekcander
  */
 public class AlphabetSymmetry {
