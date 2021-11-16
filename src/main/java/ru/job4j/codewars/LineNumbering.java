@@ -8,7 +8,7 @@ import java.util.List;
  * The numbering starts at 1. The format is n: string. Notice the colon and space in between.
  * Examples:
  * number(Arrays.asList()) # => []
- * number(Arrays.asList("a", "b", "c")) // => ["1: a", "2: b", "3: c"]
+ * number(Arrays.asList("a", "b", "c"))   => ["1: a", "2: b", "3: c"]
  */
 
 public class LineNumbering {

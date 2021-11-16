@@ -10,7 +10,7 @@ import java.util.function.Supplier;
  *
  * Например,
  * Supplier<List<String>> supplier = ArrayList::new;
- * List<String> list = supplier.get() // вернет ArrayList
+ * List<String> list = supplier.get() вернет ArrayList
  * Ваша задача вернуть Supplier, который создает пустую строку через new
  */
 

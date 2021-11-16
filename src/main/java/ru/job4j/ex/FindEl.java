@@ -16,7 +16,6 @@ public class FindEl {
     }
 
     public static boolean sent(String value, String[] abuses) {
-        // if contains throw ElementAbuseException
         return true;
     }
 

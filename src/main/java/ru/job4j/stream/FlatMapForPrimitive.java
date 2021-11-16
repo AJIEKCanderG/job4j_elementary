@@ -13,8 +13,8 @@ import java.util.Arrays;
  * Например, flatMapToInt() служит для создания стрима IntStream.
  *
  * Пример,
- * Arrays.stream(new int[][] {{1, 2, 3}, {4, 5}}) // имеем стрим массивов.
- * .flatMapToInt(subArray -> Arrays.stream(subArray)) // теперь у нас один стрим из всех элементов.
+ * Arrays.stream(new int[][] {{1, 2, 3}, {4, 5}}) имеем стрим массивов.
+ * .flatMapToInt(subArray -> Arrays.stream(subArray)) теперь у нас один стрим из всех элементов.
  * .forEach(el -> System.out.println(el))
  * В этом примере, мы получаем стрим из притивов внутренних массивов. Это нам позволяет использовать терминальные методы стримов примитивов.
  * Ваша задача получить сумму элементов матрицы

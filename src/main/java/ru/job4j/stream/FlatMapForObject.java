@@ -9,8 +9,8 @@ import java.util.stream.Collectors;
  * Метод flatMap() служит для получения стрима объектов, т.е. Stream.
  * Например,
  * List<List<Integer>> lists = List.of(List.of(1, 2), List.of(3, 4));
- * list.stream() // получаем стрим из List<Integer>
- * .flatMap(subList -> subList.stream()) // получаем стрим из элементов
+ * list.stream() получаем стрим из List<Integer>
+ * .flatMap(subList -> subList.stream()) получаем стрим из элементов
  * .forEarch(el -> System.out.println(el))
  * Ваша задача элементы вложенных списков собрать в один список
  */

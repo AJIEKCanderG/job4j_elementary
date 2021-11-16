@@ -8,7 +8,7 @@ import java.util.Comparator;
  * В утилитном классе Arrays есть метод для сортировки массива объектов void sort(массив, компаратор)
  * Например:
  * Integer[] data = {3, 2, 1};
- * Arrays.sort(data, Comparator.naturalOrder()); // теперь массив станет {1, 2, 3}
+ * Arrays.sort(data, Comparator.naturalOrder());  теперь массив станет {1, 2, 3}
  * Ваша задача отсортировать массив строк в убывающем порядке и вернуть его. Среди строк нет null элементов.
  */
 

@@ -1,10 +1,10 @@
 package ru.job4j.codewars;
 
 /**
- * Line.Tickets(new int[] {25, 25, 50}) // => YES
- * Line.Tickets(new int[] {25, 100}) // => NO.
+ * Line.Tickets(new int[] {25, 25, 50})  => YES
+ * Line.Tickets(new int[] {25, 100})   => NO.
  * Vasya will not have enough money to give change to 100 dollars
- * Line.Tickets(new int[] {25, 25, 50, 50, 100}) // => NO.
+ * Line.Tickets(new int[] {25, 25, 50, 50, 100})   => NO.
  * Vasya will not have the right bills to give 75 dollars of change (you can't make two bills of 25 from one of 50)
  */
 

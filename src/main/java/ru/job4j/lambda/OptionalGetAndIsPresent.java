@@ -6,12 +6,12 @@ import java.util.Optional;
  * 5.2. Optional. Методы isPresent(), isEmpty(), get()
  * Для того, чтобы проверить, что в Optional есть значение или нет, можно использовать метод isPresent(), isEmpty().
  * Например,
- * Optional.of(1).isPresent(); // даст true
- * Optional.empty().isEmpty(); // даст true
+ * Optional.of(1).isPresent();  даст true
+ * Optional.empty().isEmpty();  даст true
  * Для получения значения, которое мы поместили с помощью метода of() мы можем использовать метод get()
  * Например,
- * Optional.of(1).get() // Вернет 1
- * Optilnal.empty().get() // Вернет исключение!
+ * Optional.of(1).get()  Вернет 1
+ * Optilnal.empty().get()  Вернет исключение!
  * Запомните, перед вызовом метода get() всегда нужно использовать isPresent().
  * В этом суть Optional, чтобы программист не забывал делать проверки.
  * Ваша задача:

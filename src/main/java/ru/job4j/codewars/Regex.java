@@ -17,7 +17,7 @@ public class Regex {
          * Example use regex
          */
         int num = -28369;
-        String str = Integer.toString(num).replaceAll("([13579])", "-$1-"); // заменили все нечетные на -$1-
+        String str = Integer.toString(num).replaceAll("([13579])", "-$1-");
         System.out.println("([13579]) заменили все нечетные на -$1-  ==> " + str);
         str = str.replaceAll("--", "-");
         System.out.println("все -- заменили на -  ==> " + str);

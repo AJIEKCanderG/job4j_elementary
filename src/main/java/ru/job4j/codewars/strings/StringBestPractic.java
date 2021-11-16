@@ -5,7 +5,7 @@ public class StringBestPractic {
 
         String video = "video_0.mp4";
         String gif = video.split("\\.")[0] + ".gif";
-        System.out.println(gif); // на выходе "video_0.gif"
+        System.out.println(gif);
 
         /**
          *  Проверка, что строка это число с помощью regex

@@ -33,7 +33,6 @@ public class StringSplitWordsTest {
         testing(ans, sol);
     }
 
-    // ---------------------------
     private static int randInt(int min, int max) {
         return min + (int) (Math.random() * ((max - min) + 1));
     }
@@ -74,5 +73,4 @@ public class StringSplitWordsTest {
             assertEquals(sol, StringSplitWords.splitInParts(s1, n));
         }
     }
-
 }
