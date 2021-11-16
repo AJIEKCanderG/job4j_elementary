@@ -25,6 +25,9 @@ public class Merge {
      * уже существует (проверять по ключу) - то необходимо к имени добавить фамилию, если нет - то сначала добавить
      * пользователя - ключ id, значение - имя пользователя, а потом только обновить и добавить фамилию.
      * При решении используйте методы putIfAbsent() и merge().
+     * @param names имена пользователей
+     * @param users список пользователей
+     * @return список имя фамилия
      */
     public static Map<Integer, String> collectData(Map<Integer, String> names, List<User> users) {
         for (User user : users) {
