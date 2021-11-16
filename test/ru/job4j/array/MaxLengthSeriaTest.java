@@ -16,4 +16,9 @@ public class MaxLengthSeriaTest {
         assertEquals(1, MaxLengthSeria.find(new int[] {3, 2, 1}));
     }
 
+    @Test
+    public void testMoreThenOne() {
+        assertEquals(9, MaxLengthSeria.find(new int[] {6, 7, 8, 9, 10, 11, 1, 11, 12, 13, 14, 15, 16, 17, 18, 2, 3, 5, 2, 6, 3}));
+    }
+
 }

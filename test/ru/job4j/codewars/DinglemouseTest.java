@@ -16,17 +16,17 @@ public class DinglemouseTest {
 
     @Test
     public void example() {
-        assertArrayEquals(new String[]{"a","b","c"}, show(Dinglemouse.split("a.b.c")));
+        assertArrayEquals(new String[]{"a", "b", "c"}, show(Dinglemouse.split("a.b.c")));
     }
 
     @Test
-    public void WithEmptyElement() {
-        assertArrayEquals(new String[]{"a","","c"}, show(Dinglemouse.split("a..c")));
+    public void withEmptyElement() {
+        assertArrayEquals(new String[]{"a", "", "c"}, show(Dinglemouse.split("a..c")));
     }
 
     @Test
-    public void WithSpace() {
-        assertArrayEquals(new String[]{"a"," ","c"}, show(Dinglemouse.split("a. .c")));
+    public void withSpace() {
+        assertArrayEquals(new String[]{"a", " ", "c"}, show(Dinglemouse.split("a. .c")));
     }
 
     @Test
